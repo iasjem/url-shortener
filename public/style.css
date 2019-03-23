@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+/* BASE */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +15,8 @@ body {
 
 html { font-size: 18px; }
 
-h1 { margin-bottom: 1rem; }
 
-a { 
-    text-decoration: none; 
-    cursor: pointer;
-}
-
-input[type=text]  {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
+/* LAYOUT */
 
 header, section, footer { 
     text-align: center; 
@@ -43,6 +35,22 @@ footer { height: 60px; }
     align-items: center;
 }
 
+
+/* COMPONENTS */
+
+h1 { margin-bottom: 1rem; }
+
+a { 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+input[type=text]  {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
 .form {
     width: 20rem;
     margin: 1rem 0;
@@ -50,6 +58,23 @@ footer { height: 60px; }
     flex-flow: column nowrap;
     justify-content: center;
 }
+
+.clipboard { width: 100%; }
+
+.clipboard a {
+    font-size: 16px;
+    padding: 1rem;
+    background-color: #1f8ee9;
+    color: #fff;
+}
+
+.a__back { 
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1f8ee9;
+}
+
+.a__back:hover { font-weight: 400; }
 
 .btn__shorten {
     width: 15rem;
@@ -70,22 +95,7 @@ footer { height: 60px; }
     background-color: #0f89ec;
 }
 
-.a__back { 
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #1f8ee9;
-}
-
-.a__back:hover { font-weight: 400; }
-
-.clipboard { width: 100%; }
-
-.clipboard a {
-    font-size: 16px;
-    padding: 1rem;
-    background-color: #1f8ee9;
-    color: #fff;
-}
+.message--success { color: green; }
 
 .error * {
     margin: .5rem 0;
@@ -93,7 +103,8 @@ footer { height: 60px; }
 
 .error h1 { font-size: 4.8rem; }
 
-.message--success { color: green; }
+
+/* Other Screen Sizes */
 
 @media only screen and (max-width: 768px) {
     html { font-size: 16px; }
