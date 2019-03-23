@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html { font-size: 18px; }
+
+h1 { margin-bottom: 1rem; }
+
+a { 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+input[type=text]  {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+header, section, footer { 
+    text-align: center; 
+    padding: 1rem;
+}
+
+footer { height: 60px; }
+
+.container {
+    min-height: calc(100vh - 60px);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 20rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.btn__shorten {
+    width: 15rem;
+    margin: 0 auto;
+    outline: none;
+    background-color: #1f8ee9;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;    
+    font-size: 1rem;
+    transition: .3s ease;
+}
+
+.btn__shorten:hover {
+    letter-spacing: 0;
+    background-color: #0f89ec;
+}
+
+.a__back { 
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1f8ee9;
+}
+
+.a__back:hover { font-weight: 400; }
+
+.clipboard { width: 100%; }
+
+.clipboard a {
+    font-size: 16px;
+    padding: 1rem;
+    background-color: #1f8ee9;
+    color: #fff;
+}
+
+.error * {
+    margin: .5rem 0;
+}
+
+.error h1 { font-size: 4.8rem; }
+
+.message--success { color: green; }
+
+@media only screen and (max-width: 768px) {
+    html { font-size: 16px; }
+    .container { width: 100%; }
+}
+
+@media only screen and (max-width: 480px) {
+    html { font-size: 14px; }
+}

@@ -1,0 +1,14 @@
+{{> header}}
+    <section class="container">
+        <header>
+            <h1>URL Shortener</h1>
+            <p>Enter the URL you want to shorten</p>            
+        </header>
+        <form action="/api/shorturl/new" method="POST">
+            <div class="form">
+                <input class="input__url" type="text" name="url" value="https://www.freecodecamp.com" required>
+                <button class="btn__shorten">Shorten URL</button>      
+            </div>
+        </form>  
+    </section>
+{{> footer}}
