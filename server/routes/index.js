@@ -11,8 +11,7 @@ router.route('/')
 
         if (!validator.isURL(originalURL)) return res.status(400).render('400.hbs');
 
-        const url = await URL.findOne({ "original_url": originalURL });
-        if (url) return res.render('success.hbs', { shortURL: url['short_url'] });
+        await URL.findOneAndDelete({ "original_url": originalURL });
 
         const code = shortid.generate();
 
