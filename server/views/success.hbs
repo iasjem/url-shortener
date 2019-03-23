@@ -1,0 +1,13 @@
+{{> header}}
+    <section class="container error">
+        <h1>Success</h1>
+        <p>Here is your new URL</p>
+        <div class="clipboard">
+            <input id="text__clipboard" type="text" value="{{ shortURL }}" readonly/>
+            <a onclick="copyURL()"><i class="far fa-clipboard"></i></a>
+            <a target="_blank" href="{{ shortURL }}"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+        <a class="a__back" href="/">Go Back</a>
+        <span class="message--success" id="message"></span>
+    </section>
+{{> footer}}

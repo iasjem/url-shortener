@@ -4,7 +4,7 @@
   "description": "A simple URL shortener to convert a link to a shortened version",
   "main": "app.js",
   "scripts": {
-    "start": "node server/app.js"
+    "start": "nodemon server/app.js"
   },
   "repository": {
     "type": "git",
